@@ -1,17 +1,17 @@
 Problem 1 : Check whether a number is Prime or not
 
 let num = 13
-let factors = 0;
+let count = 0;
 
 for (let i = 1; i <= num; i++) {
-  if (num % i == 1) {
-    factors++
+  if (num % i == 0) {
+    count++
   }
 }
-if (factors == 1) {
-  console.log("a prime number")
+if (count == 2) {
+  console.log("a prime number");
 } else {
-  console.log("not a prime number")
+  console.log("not a prime number");
 }
 
 
@@ -20,13 +20,13 @@ Problem 2 : Check whether a string is palindrome or not.
 let str = "naman";
 let rev = "";
 
-for (let i = str.length ; i >= 0; i++) {
-  rev += str[i]
+for (let i = str.length-1 ; i >= 0; i--) {
+  rev += str[i];
 }
 if (str == rev) {
-  console.log("Palindrome")
+  console.log("Palindrome");
 } else {
-  console.log("not a Palindrome")
+  console.log("not a Palindrome");
 }
 
 
